@@ -1,11 +1,17 @@
 <template lang="html">
-  <h1>{{ title }}</h1>
+  <div class="wrapper-app">
+    <h1>{{ title }}</h1>
+    <span v-if="seen">Меня видно</span>
+  </div>
 </template>
 
 <script>
 export default {
   data: () => ({
-    title: 'hello'
-  })
+    title: 'hello',
+    seen: true
+  }),
+
+  methods: () => ({})
 }
 </script>
